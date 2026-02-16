@@ -14,21 +14,39 @@
     "fae0db8d-7080-48c7-b779-9ec074b0c8df": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_Lpn8Wc": {
+          "type": "announcement",
+          "settings": {
+            "text": "An announcement about our store",
+            "link": ""
+          }
+        },
         "announcement_yhr8Ne": {
           "type": "announcement",
           "settings": {
             "text": "Free Shipping on orders of $50 or more",
             "link": ""
           }
+        },
+        "announcement_wyx8GY": {
+          "type": "announcement",
+          "settings": {
+            "text": "An announcement about our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_yhr8Ne"
+        "announcement_Lpn8Wc",
+        "announcement_yhr8Ne",
+        "announcement_wyx8GY"
       ],
       "settings": {
         "bar_type": "full-width",
         "border_opacity": 0,
         "corner_radius": 0,
+        "font_family": "body",
+        "font_style": "normal",
         "font_size_mobile": 12,
         "font_size_desktop": 14,
         "anim_style": "fade",
@@ -85,6 +103,7 @@
         "trans_hp": true,
         "trans_border_hide": true,
         "trans_header_color": "white",
+        "backdrop_blur": false,
         "menu_icon_style": "two_line",
         "drawer_list_system": "sliding",
         "drawer_text_alignment": "left",
