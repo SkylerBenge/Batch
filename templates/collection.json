@@ -66,7 +66,7 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "banner_layout": "text-only",
+        "banner_layout": "overlay",
         "banner_height_mobile": "default",
         "banner_height": "default",
         "banner_width": "none",
