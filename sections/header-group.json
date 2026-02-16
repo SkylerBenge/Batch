@@ -17,14 +17,14 @@
         "announcement_Lpn8Wc": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on orders over $49.99",
+            "text": "An announcement about our store",
             "link": ""
           }
         },
         "announcement_yhr8Ne": {
           "type": "announcement",
           "settings": {
-            "text": "Made in the USA",
+            "text": "Free Shipping on orders of $50 or more",
             "link": ""
           }
         },
