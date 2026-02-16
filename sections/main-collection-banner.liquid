@@ -5,7 +5,7 @@
   padding-top: {{ section.settings.top_padding }}px;
   padding-bottom: {{ section.settings.bottom_padding }}px;
 }
-  
+
 .collection-banner-card-banner {
   color: {{ section.settings.txt_col }};
   background: {{ section.settings.bg_col }};
@@ -35,7 +35,7 @@
   @media only screen and (min-width: 1025px) {
   .collection-card-banner--image-card {
     padding: var(--page-margin-desktop) calc(var(--grid-desktop-horizontal-spacing) * 0.5) var(--page-margin-desktop) var(--page-margin-desktop);
-  }    
+  }
 
 {% if section.settings.cards_img_position == 'right' %}
     @media only screen and (min-width: 1025px) {
@@ -45,8 +45,8 @@
   .collection-card-banner--text-card {
     padding: var(--page-margin-desktop) calc(var(--grid-desktop-horizontal-spacing) * 0.5) var(--page-margin-desktop) var(--page-margin-desktop);
   }
-{% endif %}    
-    
+{% endif %}
+
   }
 {% endif %}
 {% endstyle %}
@@ -93,7 +93,7 @@
 </div>
 {% endunless %}
 {% endif %}
-  
+
 </div>
 {% endif %}
 {% if collection.image %}
@@ -105,7 +105,7 @@
 {% if section.settings.banner_layout == 'overlay-db' and collection.image and section.settings.description_enable %}
 <div class="collection-std-description {{ section.settings.description_size }} collection-std-description-below align-{{ section.settings.txt_alignment }} page-width">
 {{ collection.description }}
-</div> 
+</div>
 {% endif %}
 
 {% if section.settings.banner_layout == 'stacked-image-first' and collection.image %}
@@ -115,15 +115,15 @@
 {% if collection.description != blank and section.settings.description_enable %}
 <div class="collection-std-description {{ section.settings.description_size }} align-{{ section.settings.txt_alignment }}">
 {{ collection.description }}
-</div>  
+</div>
 {% endif %}
 </div>
 {% endif %}
 
-{% if section.settings.banner_layout == 'text-only' or collection.image == blank  %} 
+{% if section.settings.banner_layout == 'text-only' or collection.image == blank  %}
 <div class="collection-banner-std page-width">
 <div class="collection-banner-std-title align-{{ section.settings.txt_alignment }}">
-<h1 class="{{ section.settings.title_size }}">{{ collection.title | escape }}</h1>
+<h1 class="{{ section.settings.title_size }}">{{ collection.title | escape }}test</h1>
 </div>
 {% if section.settings.description_enable %}
 <div class="collection-std-description {{ section.settings.description_size }} align-{{ section.settings.txt_alignment }}">
