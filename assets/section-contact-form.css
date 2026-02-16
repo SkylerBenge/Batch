@@ -1,0 +1,69 @@
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__message {
+  align-items: flex-start;
+}
+
+.contact .field {
+  margin-bottom: 1.5rem;
+}
+
+.contact input:focus-visible, .contact textarea:focus-visible {
+  outline: 2px solid !important;
+}
+
+@media screen and (min-width: 750px) {
+  .contact .field {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact__button {
+  margin-top: 3rem;
+}
+
+.contact__button .button {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .contact__button {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .contact__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+.lcontact-form .field--with-error:has(.contact__field-error) .field__input {
+  border: var(--inputs-border-width) solid #D70000;
+}
+
+.contact .icon-success {
+  margin-top: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.lcontact-form h3.form-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  line-height: 1.1;
+}
+
+.lcontact-form .form-status:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+body:has(.lcontact-form .contact__field-error) .newsletter-form__message {
+  display: none !important;
+}

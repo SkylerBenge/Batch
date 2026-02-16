@@ -1,0 +1,486 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "banner_size": "banner-style-large",
+        "banner_full_link": "",
+        "image": "shopify://shop_images/Your_paragraph_text_2a9793e4-31dd-4d9a-868e-58552f1026a1.png",
+        "primary_image_size": "dt-full-bleed",
+        "image_padding": 0,
+        "main_image_animation": "none",
+        "image_blur": 0,
+        "primary_image_mobile_show": false,
+        "image_secondary": "shopify://shop_images/28g_Protein._real_ingredients._real_rice._e0c1da3b-29d9-48ae-aa9f-bf5aa07346d0.png",
+        "secondary_image_size": "dt-full-bleed",
+        "secondary_image_padding": 0,
+        "secondary_image_animation": "none",
+        "secondary_image_blur": 0,
+        "secondary_image_mobile_show": true,
+        "txt_alignment": "center",
+        "txt_position": "middle",
+        "content_width": 50,
+        "text_vertical_spacing": 10,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "fade_in_text": true,
+        "scroll_fade_effect": false,
+        "text_blend_effect": "none",
+        "text_color": "fg-white",
+        "bg_color": "rgba(0,0,0,0)",
+        "overlay_level": 0
+      }
+    },
+    "featured_product_bx4a9K": {
+      "type": "featured-product",
+      "blocks": {
+        "title_jkDpxV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_hrWC77": {
+          "type": "price",
+          "settings": {
+            "price_show_taxes": true,
+            "block_padding_top": 10,
+            "block_padding_bottom": 10
+          }
+        },
+        "button_XJ73GE": {
+          "type": "button",
+          "settings": {
+            "button_type": "buy",
+            "button_text": "Shop now",
+            "button_style": "solid",
+            "button_width_mobile": "full-width",
+            "button_width_desktop": "default"
+          }
+        }
+      },
+      "block_order": [
+        "title_jkDpxV",
+        "price_hrWC77",
+        "button_XJ73GE"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "original-4-pack",
+        "show_tag": false,
+        "image": "shopify://shop_images/BatchFrontAI.png",
+        "image_ratio": "portrait",
+        "secondary_image_scale": "small",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "content_width": "page-width",
+        "image_alignment": "right",
+        "card_spacing": 20,
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "section_text_ticker_zV3PBy": {
+      "type": "section-text-ticker",
+      "blocks": {
+        "text_PCha6t": {
+          "type": "text",
+          "settings": {
+            "text": "28g of Protein"
+          }
+        },
+        "text_NeXAhr": {
+          "type": "text",
+          "settings": {
+            "text": "Gluten Free"
+          }
+        },
+        "text_pG3hFq": {
+          "type": "text",
+          "settings": {
+            "text": "0g of Fat"
+          }
+        },
+        "text_kFCWrN": {
+          "type": "text",
+          "settings": {
+            "text": "Made in the USA"
+          }
+        }
+      },
+      "block_order": [
+        "text_PCha6t",
+        "text_NeXAhr",
+        "text_pG3hFq",
+        "text_kFCWrN"
+      ],
+      "name": "t:sections.text-ticker.presets.name",
+      "settings": {
+        "font_size": "text-large",
+        "vertical_padding": 20,
+        "anim_speed": 8,
+        "text_color": "fg-01",
+        "bg_color": "bg-04",
+        "top_border": true,
+        "bottom_border": true,
+        "border_width": "full",
+        "border_color": "dark"
+      }
+    },
+    "slideshow_x9QxQg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cfxLNk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0047.jpg",
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "<p>Clean Ingredients. Complete Nutrition.</p>",
+            "btn_block_txt": "Learn More",
+            "btn_block_url": "shopify://pages/our-mission",
+            "btn_block_style": "button--solid"
+          }
+        },
+        "slide_7zBK73": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ai-generated-a-handful-of-long-grain-white-rice-spills-out-on-the-wooden-table-food-light-natural-colors-high-quality-ai-generative-photo_c3bb513a-21e5-4127-a13d-3945b3e15c92.jpg",
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "<p>Clean Ingredients. Complete Nutrition.</p>",
+            "btn_block_txt": "Learn More",
+            "btn_block_url": "shopify://pages/our-mission",
+            "btn_block_style": "button--solid"
+          }
+        },
+        "slide_rKPj9n": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20220929131539-salmon-20rice-20bowl-20almost-20finished.webp",
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "<p>Clean Ingredients. Complete Nutrition.</p>",
+            "btn_block_txt": "Learn More",
+            "btn_block_url": "shopify://pages/our-mission",
+            "btn_block_style": "button--solid"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cfxLNk",
+        "slide_7zBK73",
+        "slide_rKPj9n"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "banner_size": "banner-style-fullscreen",
+        "slideshow_type": "multi_message",
+        "section_margin_width": "full-width-slideshow",
+        "media_scaling": "cover",
+        "section_top_padding": 0,
+        "section_bottom_padding": 0,
+        "slider_effect": "fade",
+        "slider_autoplay_interval": 4,
+        "slider_speed": 800,
+        "show_arrows": true,
+        "slider_autoplay": false,
+        "arrow_style": "outline",
+        "section_label": "",
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_size": "h1",
+        "text_size": "text-body",
+        "txt_position": "middle",
+        "txt_alignment": "center",
+        "txt_width": 600,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "btn_one_txt": "",
+        "btn_one_link": "",
+        "btn_one_style": "button--solid",
+        "btn_two_txt": "",
+        "btn_two_link": "",
+        "btn_two_style": "button--solid",
+        "text_color": "fg-white",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "white",
+        "overlay_level": 0
+      }
+    },
+    "section_feature_icons_8ptPR4": {
+      "type": "section-feature-icons",
+      "blocks": {
+        "image_hRHfBa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rice2.svg",
+            "heading": "Organic Long Grain White Rice",
+            "description": ""
+          }
+        },
+        "image_3Xbk48": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cow.svg",
+            "heading": "Grass Fed Bovine Collagen",
+            "description": ""
+          }
+        },
+        "image_8jpmHn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/chicken_3ae79565-a354-481e-a25e-6d7ae368640f.svg",
+            "heading": "Organic Chicken Broth",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hRHfBa",
+        "image_3Xbk48",
+        "image_8jpmHn"
+      ],
+      "name": "t:sections.feature_icons.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h2",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_style": "solid",
+        "content_width": "page-width",
+        "content_alignment": "center",
+        "icon_size_mobile": 72,
+        "icon_size_tablet": 80,
+        "icon_size_desktop": 80,
+        "grid_columns_mobile": "3",
+        "grid_columns_tablet": "auto",
+        "grid_columns_desktop": "auto",
+        "icon_spacing_mobile": 28,
+        "icon_spacing_tablet": 80,
+        "icon_spacing_desktop": 176,
+        "icon_layout": "vertical",
+        "icon_vertical_alignment": "top",
+        "icon_title_size": "h3",
+        "icon_description_size": "normal",
+        "icon_to_title_spacing": 12,
+        "icon_title_spacing_bottom": 8,
+        "icon_text_max_width": 300,
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_padding": 80,
+        "bottom_padding": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "featured_product_ptGeJq": {
+      "type": "featured-product",
+      "blocks": {
+        "title_DJrzaU": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_cRppmG": {
+          "type": "price",
+          "settings": {
+            "price_show_taxes": true,
+            "block_padding_top": 10,
+            "block_padding_bottom": 10
+          }
+        },
+        "button_Km9mYL": {
+          "type": "button",
+          "settings": {
+            "button_type": "buy",
+            "button_text": "Shop now",
+            "button_style": "solid",
+            "button_width_mobile": "full-width",
+            "button_width_desktop": "default"
+          }
+        }
+      },
+      "block_order": [
+        "title_DJrzaU",
+        "price_cRppmG",
+        "button_Km9mYL"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "unseasoned-4-pack",
+        "show_tag": false,
+        "image": "shopify://shop_images/Unknown.png",
+        "image_ratio": "portrait",
+        "secondary_image_scale": "small",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "content_width": "page-width",
+        "image_alignment": "left",
+        "card_spacing": 20,
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "featured_product_HzdfjB": {
+      "type": "featured-product",
+      "blocks": {
+        "title_xF9QaY": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_tXQFPn": {
+          "type": "price",
+          "settings": {
+            "price_show_taxes": true,
+            "block_padding_top": 10,
+            "block_padding_bottom": 10
+          }
+        },
+        "button_RzT6hz": {
+          "type": "button",
+          "settings": {
+            "button_type": "buy",
+            "button_text": "Shop now",
+            "button_style": "solid",
+            "button_width_mobile": "full-width",
+            "button_width_desktop": "default"
+          }
+        }
+      },
+      "block_order": [
+        "title_xF9QaY",
+        "price_tXQFPn",
+        "button_RzT6hz"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "mix-match",
+        "show_tag": false,
+        "image": "shopify://shop_images/Batch_Box_Combo_White_Background_AI_2.png",
+        "image_ratio": "portrait",
+        "secondary_image_scale": "small",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "content_width": "page-width",
+        "image_alignment": "right",
+        "card_spacing": 20,
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    },
+    "featured_product_gqRyt3": {
+      "type": "featured-product",
+      "blocks": {
+        "title_XKTAAK": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_K7gMFd": {
+          "type": "price",
+          "settings": {
+            "price_show_taxes": true,
+            "block_padding_top": 10,
+            "block_padding_bottom": 10
+          }
+        },
+        "button_D6WWGJ": {
+          "type": "button",
+          "settings": {
+            "button_type": "buy",
+            "button_text": "Shop now",
+            "button_style": "solid",
+            "button_width_mobile": "full-width",
+            "button_width_desktop": "default"
+          }
+        }
+      },
+      "block_order": [
+        "title_XKTAAK",
+        "price_K7gMFd",
+        "button_D6WWGJ"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "batch-trucker-camo",
+        "show_tag": false,
+        "image": "shopify://shop_images/IMG_00582.jpg",
+        "image_ratio": "portrait",
+        "secondary_image_scale": "small",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "content_width": "page-width",
+        "image_alignment": "left",
+        "card_spacing": 20,
+        "top_padding": 80,
+        "bottom_padding": 80
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_product_bx4a9K",
+    "section_text_ticker_zV3PBy",
+    "slideshow_x9QxQg",
+    "section_feature_icons_8ptPR4",
+    "featured_product_ptGeJq",
+    "featured_product_HzdfjB",
+    "featured_product_gqRyt3"
+  ]
+}

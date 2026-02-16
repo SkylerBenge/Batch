@@ -1,0 +1,226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "page-width-medium",
+        "hdr_alignment": "center",
+        "heading_hide": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_C7ipE4": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_6Q6WeC": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Mission",
+            "alignment": "center",
+            "opacity": 100
+          }
+        },
+        "heading_fc4YmU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Setting the New Standard",
+            "heading_size": "h1",
+            "alignment": "center"
+          }
+        },
+        "text_tVNeTB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Batch</strong>, we believe food should nourish more than just your hunger, it should nourish your life. Rice has always been a part of family tables, cultures, and comfort across the world. But for all its warmth and familiarity, it’s often lacking in real nutrition.</p><p>We set out to change that.</p><p>By combining organic long grain white rice with rich, organic chicken broth and grass-fed collagen, we’ve created something that feels familiar, but delivers so much more. Every pouch is made with care in the USA using ethically sourced ingredients and no shortcuts, ever.</p><p>Our mission is simple: to bring purpose, substance, and intention to a food we all know and love.</p>",
+            "text_size": "text-std",
+            "alignment": "left",
+            "text_indent": "noindent"
+          }
+        }
+      },
+      "block_order": [
+        "caption_6Q6WeC",
+        "heading_fc4YmU",
+        "text_tVNeTB"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_width": "page-width",
+        "bg_image": "shopify://shop_images/rice-paddies-surround-yellow-house.jpg",
+        "bg_image_darken": 70,
+        "bg_image_blur": 0,
+        "text_color": "fg-01",
+        "bg_color": "bg-body",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "section_tabs_pPEghQ": {
+      "type": "section-tabs",
+      "blocks": {
+        "content_LJTnMF": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "Organic Long Grain White Rice",
+            "heading": "",
+            "content_text": "<p>Our rice is <strong>QAI-certified organic</strong> and grown in <strong>Arkansas</strong>, a region known for clean, high-quality grains.</p><p>Naturally low in fat and easy to digest, long grain white rice is a clean source of energy and pairs perfectly with a high-protein diet. Its light texture and mild flavor make it a versatile base. No additives. No shortcuts. Just real, organic rice.</p>",
+            "image": "shopify://shop_images/ai-generated-a-handful-of-long-grain-white-rice-spills-out-on-the-wooden-table-food-light-natural-colors-high-quality-ai-generative-photo_c3bb513a-21e5-4127-a13d-3945b3e15c92.jpg"
+          }
+        },
+        "content_8dLe6c": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "Grass-Fed Bovine Collagen",
+            "heading": "",
+            "content_text": "<p>Our collagen is sourced from a<strong> grass-fed farm in South Korea</strong>, known for clean, ethical practices and traceable quality.</p><p>Collagen is a functional protein that supports <strong>joints, skin, bones, hair, and gut health</strong>, and plays a key role in recovery and long-term wellness. While it's not a complete protein on its own, it’s only missing one essential amino acid: <strong>tryptophan,</strong> the final piece needed to support <strong>muscle-building and full-body repair</strong>.</p><p>By pairing the collagen with our organic long grain white rice, which naturally contains <strong>tryptophan</strong>, we create a more complete protein source. One that’s both nourishing and effective.</p><p>Flavorless, easily absorbed, and filler-free, this collagen is clean protein with real purpose.</p>",
+            "image": "shopify://shop_images/sts3719.jpg"
+          }
+        },
+        "content_cpzmeM": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "Organic Chicken Broth",
+            "heading": "",
+            "content_text": "<p>Our organic chicken broth is made in the USA, sourced from high-quality, ethically raised chickens with full traceability and clean production practices. Certified organic and slow-simmered for depth, it’s more than just a flavor enhancer, it’s a nutrient-dense foundation for recovery, wellness, and everyday nourishment.</p><p>Chicken broth is naturally rich in amino acids, electrolytes, and essential minerals like calcium, magnesium, and phosphorus. These nutrients support gut integrity, joint health, hydration, and immune function making it a go-to for both performance and comfort.</p><p>Because our broth is made from real ingredients, it delivers clean, savory depth without compromise. The result is a richer rice experience, layered with nutrition, not noise.</p><p></p>",
+            "image": "shopify://shop_images/istockphoto-494023846-612x612.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "content_LJTnMF",
+        "content_8dLe6c",
+        "content_cpzmeM"
+      ],
+      "name": "t:sections.tabbed-content.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "The Foundation",
+        "sub_heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "tab_alignment": "center",
+        "content_alignment": "left",
+        "tab_style": "underline",
+        "tab_underline": true,
+        "tab_position_desktop": "top",
+        "text_position_vertical": "top",
+        "image_ratio": "fit",
+        "image_position": "right",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "top_padding": 80,
+        "bottom_padding": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "section_feature_icons_BCjWTm": {
+      "type": "section-feature-icons",
+      "blocks": {
+        "image_wPiMDt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grass-fed-icon_3.png",
+            "heading": "Grass-Fed Collagen",
+            "description": ""
+          }
+        },
+        "image_axYFXW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/non-gmo-icon_3.png",
+            "heading": "No added preservatives",
+            "description": ""
+          }
+        },
+        "image_hLbBXY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/QAI_Organic_is_non-GMO.jpg",
+            "heading": "QAI Organic Certified Rice and Chicken Broth",
+            "description": ""
+          }
+        },
+        "image_ci4ixJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gluten-free-icon_3.png",
+            "heading": "Gluten Free",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wPiMDt",
+        "image_axYFXW",
+        "image_hLbBXY",
+        "image_ci4ixJ"
+      ],
+      "name": "t:sections.feature_icons.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "Certifications and Standards",
+        "subheading": "",
+        "heading_size": "h2",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_style": "solid",
+        "content_width": "page-width",
+        "content_alignment": "center",
+        "icon_size_mobile": 80,
+        "icon_size_tablet": 80,
+        "icon_size_desktop": 132,
+        "grid_columns_mobile": "auto",
+        "grid_columns_tablet": "auto",
+        "grid_columns_desktop": "auto",
+        "icon_spacing_mobile": 40,
+        "icon_spacing_tablet": 40,
+        "icon_spacing_desktop": 40,
+        "icon_layout": "vertical",
+        "icon_vertical_alignment": "top",
+        "icon_title_size": "h3",
+        "icon_description_size": "normal",
+        "icon_to_title_spacing": 12,
+        "icon_title_spacing_bottom": 8,
+        "icon_text_max_width": 250,
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "top_padding": 80,
+        "bottom_padding": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_C7ipE4",
+    "section_tabs_pPEghQ",
+    "section_feature_icons_BCjWTm"
+  ]
+}

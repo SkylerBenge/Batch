@@ -1,0 +1,219 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "hdr_alignment": "center",
+        "pagination_value": 24,
+        "layout_tablet": 3,
+        "layout_desktop": 4,
+        "show_image": true,
+        "show_excerpt": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "grid_padding_top": 60
+      }
+    },
+    "rich_text_3j4xc4": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_jRDJ9Y": {
+          "type": "caption",
+          "settings": {
+            "caption": "Where to Find us",
+            "alignment": "left",
+            "opacity": 100
+          }
+        },
+        "heading_T6YefU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay Connected. Shop Locally. Follow Along.",
+            "heading_size": "h2",
+            "alignment": "left"
+          }
+        },
+        "text_8XfaQH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can find us on Amazon, Tik Tok Shop, iHerb, and soon in select stores</p><p>Want to stay in the loop? Follow us on Instagram and TikTok for new product drops, behind-the-scenes content, and updates on where we’ll be popping up next.</p>",
+            "text_size": "text-std",
+            "alignment": "left",
+            "text_indent": "noindent"
+          }
+        }
+      },
+      "block_order": [
+        "caption_jRDJ9Y",
+        "heading_T6YefU",
+        "text_8XfaQH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_width": "page-width",
+        "bg_image": "shopify://shop_images/rice-paddies-surround-yellow-house.jpg",
+        "bg_image_darken": 60,
+        "bg_image_blur": 0,
+        "text_color": "fg-01",
+        "bg_color": "bg-body",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "section_tabs_WU6P6q": {
+      "type": "section-tabs",
+      "blocks": {
+        "content_YGmAiz": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "Where else to Buy",
+            "heading": "",
+            "content_text": "<p><strong>batch </strong>is also available on the following select online retailers</p><p><strong>Amazon.com</strong></p><p><strong>iHerb.com</strong></p><p><strong>Tik-Tok Shop </strong></p>"
+          }
+        },
+        "content_ETn6f9": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "Socials",
+            "heading": "",
+            "content_text": "<p><a href=\"https://www.instagram.com/batch?utm_source=ig_web_button_share_sheet&igsh=d3ZweGJuemJuaGNl\" title=\"batch on Instagram \"><strong>@batch on Instagram </strong></a></p><p><a href=\"https://www.tiktok.com/@shushsndjdshzh?_t=ZT-8wvviXq9yeo&_r=1\" title=\"batch on Tik Tok \"><strong>@batchfoods on Tik Tok </strong></a></p><p></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_YGmAiz",
+        "content_ETn6f9"
+      ],
+      "name": "t:sections.tabbed-content.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "",
+        "sub_heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "tab_alignment": "center",
+        "content_alignment": "left",
+        "tab_style": "underline",
+        "tab_underline": true,
+        "tab_position_desktop": "top",
+        "text_position_vertical": "top",
+        "image_ratio": "fit",
+        "image_position": "right",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "top_padding": 80,
+        "bottom_padding": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "slideshow_DrprAm": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_GDAgxL": {
+          "type": "slide",
+          "settings": {
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "",
+            "btn_block_txt": "",
+            "btn_block_url": "",
+            "btn_block_style": "button--solid"
+          }
+        },
+        "slide_ymnYmB": {
+          "type": "slide",
+          "settings": {
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "",
+            "btn_block_txt": "",
+            "btn_block_url": "",
+            "btn_block_style": "button--solid"
+          }
+        },
+        "slide_wRhXzC": {
+          "type": "slide",
+          "settings": {
+            "image_animation": "none",
+            "caption": "",
+            "heading": "",
+            "subheading": "",
+            "btn_block_txt": "",
+            "btn_block_url": "",
+            "btn_block_style": "button--solid"
+          }
+        }
+      },
+      "block_order": [
+        "slide_GDAgxL",
+        "slide_ymnYmB",
+        "slide_wRhXzC"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "banner_size": "banner-style-fullscreen",
+        "slideshow_type": "multi_message",
+        "section_margin_width": "full-width-slideshow",
+        "media_scaling": "cover",
+        "section_top_padding": 0,
+        "section_bottom_padding": 0,
+        "slider_effect": "fade",
+        "slider_autoplay_interval": 4,
+        "slider_speed": 800,
+        "show_arrows": true,
+        "slider_autoplay": false,
+        "arrow_style": "outline",
+        "section_label": "",
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_size": "h1",
+        "text_size": "text-body",
+        "txt_position": "middle",
+        "txt_alignment": "center",
+        "txt_width": 600,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "btn_one_txt": "",
+        "btn_one_link": "",
+        "btn_one_style": "button--solid",
+        "btn_two_txt": "",
+        "btn_two_link": "",
+        "btn_two_style": "button--solid",
+        "text_color": "fg-white",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "white",
+        "overlay_level": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_3j4xc4",
+    "section_tabs_WU6P6q",
+    "slideshow_DrprAm"
+  ]
+}

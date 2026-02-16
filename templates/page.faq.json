@@ -1,0 +1,199 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_XMktTE": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_K6x6px": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQs",
+            "heading_size": "h1",
+            "txt_alignment": "center"
+          }
+        },
+        "text_GDCa3d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Answering your questions</p>",
+            "text_size": "text-std"
+          }
+        }
+      },
+      "block_order": [
+        "heading_K6x6px",
+        "text_GDCa3d"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "banner_size": "banner-style-fullscreen",
+        "banner_full_link": "",
+        "image": "shopify://shop_images/sts3719.jpg",
+        "primary_image_size": "dt-full-bleed",
+        "image_padding": 0,
+        "main_image_animation": "none",
+        "image_blur": 0,
+        "primary_image_mobile_show": true,
+        "secondary_image_size": "dt-full-bleed",
+        "secondary_image_padding": 0,
+        "secondary_image_animation": "none",
+        "secondary_image_blur": 0,
+        "secondary_image_mobile_show": true,
+        "txt_alignment": "center",
+        "txt_position": "middle",
+        "content_width": 75,
+        "text_vertical_spacing": 10,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "fade_in_text": true,
+        "scroll_fade_effect": false,
+        "text_blend_effect": "none",
+        "text_color": "fg-white",
+        "bg_color": "rgba(0,0,0,0)",
+        "overlay_level": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "page-width",
+        "hdr_alignment": "center",
+        "heading_hide": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_8aQjkK": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Can I eat batch as a meal alone?",
+            "content": ""
+          }
+        },
+        "collapsible_row_FHGiNX": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Can this replace my normal protein intake?",
+            "content": ""
+          }
+        },
+        "collapsible_row_DUQ4MT": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "How do I store batch?",
+            "content": ""
+          }
+        },
+        "collapsible_row_UMcMiV": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "How many servings per bag?",
+            "content": ""
+          }
+        },
+        "collapsible_row_FGWGtR": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "What is the shelf life?",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_8aQjkK",
+        "collapsible_row_FHGiNX",
+        "collapsible_row_DUQ4MT",
+        "collapsible_row_UMcMiV",
+        "collapsible_row_FGWGtR"
+      ],
+      "settings": {
+        "section_label": "",
+        "heading": "Product Information",
+        "heading_size": "h2",
+        "subheading": "",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "btn_color_scheme": "default",
+        "content_alignment": "center",
+        "content_width": "standard",
+        "accordion_title_font": "body",
+        "accordion_title_size": "std",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "collapsible_content_JCkDpJ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ab4kze": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "When will I receive my order?",
+            "content": ""
+          }
+        },
+        "collapsible_row_FhBN6X": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "What is your return policy?",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ab4kze",
+        "collapsible_row_FhBN6X"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "Shipping & Returns",
+        "heading_size": "h2",
+        "subheading": "",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "btn_color_scheme": "default",
+        "content_alignment": "center",
+        "content_width": "standard",
+        "accordion_title_font": "body",
+        "accordion_title_size": "std",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    }
+  },
+  "order": [
+    "image_banner_XMktTE",
+    "main",
+    "collapsible_content",
+    "collapsible_content_JCkDpJ"
+  ]
+}

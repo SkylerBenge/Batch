@@ -1,0 +1,170 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "fae0db8d-7080-48c7-b779-9ec074b0c8df": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_yhr8Ne": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping on orders of $50 or more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_yhr8Ne"
+      ],
+      "settings": {
+        "bar_type": "full-width",
+        "border_opacity": 0,
+        "corner_radius": 0,
+        "font_size_mobile": 12,
+        "font_size_desktop": 14,
+        "anim_style": "fade",
+        "anim_delay": 6
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "image_9WdUz4": {
+          "type": "image",
+          "settings": {
+            "dd_name": "",
+            "show_in_dropdown": true,
+            "show_in_drawer": false,
+            "show_in_drawer_primary": false,
+            "image_link": "",
+            "text_position": "below-image",
+            "text_color": "normal",
+            "heading": "",
+            "heading_size": "default-size",
+            "heading_weight": "bold",
+            "sub_heading": "",
+            "badge": "",
+            "button_show": false,
+            "button_label": "",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_9WdUz4"
+      ],
+      "settings": {
+        "logo_mobile_position": "center",
+        "logo_dt_position": "center",
+        "logo_size": 100,
+        "logo_size_dt": 180,
+        "main_menu": "main-menu",
+        "secondary_menu": "",
+        "secondary_menu_desktop": "",
+        "header_bar_width": "full",
+        "header_hoz_width": "wide",
+        "header_scroll_behaviour": "sticky",
+        "desktop_nav_position": "fly-out",
+        "menu_dropdown_function": "hover",
+        "nav_bar_height_mobile": 60,
+        "nav_bar_height": 80,
+        "header_corner_radius": 0,
+        "header_border_opacity": 15,
+        "header_border_width": "full",
+        "header_internal_border_width": "full",
+        "header_shadow_opacity": 0,
+        "trans_hp": true,
+        "trans_border_hide": true,
+        "trans_header_color": "white",
+        "menu_icon_style": "two_line",
+        "drawer_list_system": "sliding",
+        "drawer_text_alignment": "left",
+        "header_drawer_list_spacing": 16,
+        "header_drawer_margin": 16,
+        "header_drawer_margin_desktop": 30,
+        "header_drawer_list_borders": true,
+        "menu_viewall_mobile": false,
+        "menu_viewall_mobile_label": "Shop All",
+        "menu_viewall_mobile_position": "first",
+        "dd_icon": "none",
+        "dd_highlight_style": "opacity",
+        "dd_menu_link_rollover_style": "opacity",
+        "header_dropdown_panel_width": "dd-panel-full-width",
+        "dropdown_drawer_layout": "one-column",
+        "header_dd_contents_width": "full",
+        "header_dd_contents_justify": "left",
+        "header_dd_column_alignment": "left",
+        "desktop_primary_menu_spacing": 24,
+        "dd_vertical_padding": 30,
+        "dropdown_list_vertical_spacing": 4,
+        "dd_column_borders": false,
+        "nav_font_family": "navigation",
+        "nav_font_secondary_family": "navigation",
+        "nav_font_case": "caps",
+        "dropdown_font_case": "normal",
+        "category_heading_font_style": "faded",
+        "nav_font_size_mobile": 14,
+        "nav_font_size_mobile_secondary_menu": 13,
+        "nav_font_size_desktop": 12,
+        "font_size_dropdown": 14,
+        "font_size_dropdown_category_heading": 14,
+        "dd_image_ratio": "portrait",
+        "dd_image_size": "medium",
+        "feat_image_radius": 0,
+        "images_p_level": false,
+        "images_s_level": false,
+        "images_t_level": false,
+        "ci_image_ratio": "portrait",
+        "ci_image_size": "medium",
+        "images_dd_category": false,
+        "cddi_image_ratio": "landscape",
+        "dd_image_radius": 0,
+        "search_enable": true,
+        "search_ui": "icon",
+        "account_enable": true,
+        "account_ui": "icon",
+        "cart_ui": "icon_bag",
+        "enable_international": true,
+        "show_currency": true,
+        "international_icon": "none",
+        "enable_language_selector": false,
+        "social_show": true,
+        "social_heading": "",
+        "social_alignment": "left",
+        "social_ui": "icon"
+      }
+    },
+    "component_popup_rMH6Nb": {
+      "type": "component-popup",
+      "disabled": true,
+      "name": "t:sections.popup.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/sts3719.jpg",
+        "heading": "Sign up for 10% off your first purchase",
+        "description": "",
+        "content_alignment": "center",
+        "modal_layout": "vertical",
+        "btn_enable": true,
+        "btn_txt": "create Account",
+        "btn_link": "",
+        "btn_style": "solid",
+        "text_color": "fg-body",
+        "bg_color": "bg-body"
+      }
+    }
+  },
+  "order": [
+    "fae0db8d-7080-48c7-b779-9ec074b0c8df",
+    "header",
+    "component_popup_rMH6Nb"
+  ]
+}

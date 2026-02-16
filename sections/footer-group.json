@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "9aa550d7-fade-44ce-a34f-b46d43c27ead": {
+          "type": "newsletter_signup",
+          "settings": {
+            "heading": "Get Notified",
+            "heading_size": "h3",
+            "heading_style": "normal",
+            "subheading": "<p>Be the first to know about our new products </p>",
+            "disclaimer_show": false,
+            "disclaimer": "",
+            "newsletter_form_width": "normal",
+            "newsletter_style": "minimal",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "alignment": "center",
+            "block_width": "full_width"
+          }
+        },
+        "link_list_YbfEkc": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "list_type_mobile": "accordion",
+            "block_width": "full_width",
+            "alignment": "center",
+            "list_layout": "horizontal",
+            "list_layout_mobile": "vertical",
+            "menu": "footer"
+          }
+        },
+        "da7b7fd4-787b-47cf-a306-e3f1259f0556": {
+          "type": "social_media",
+          "settings": {
+            "heading": "",
+            "alignment": "center",
+            "block_width": "full_width",
+            "link_style": "icons"
+          }
+        }
+      },
+      "block_order": [
+        "9aa550d7-fade-44ce-a34f-b46d43c27ead",
+        "link_list_YbfEkc",
+        "da7b7fd4-787b-47cf-a306-e3f1259f0556"
+      ],
+      "settings": {
+        "footer_font_family": "body",
+        "footer_font_size": "body",
+        "footer_heading_size": "normal",
+        "footer_heading_style": "normal",
+        "footer_horizontal_spacing_desktop": 20,
+        "footer_padding_vertical": 40,
+        "footer_padding_bottom": 20,
+        "text_color": "fg-01",
+        "bg_color": "bg-04",
+        "main_footer_border": 0,
+        "main_footer_border_color": "dark",
+        "sub_footer_border": true,
+        "sub_footer_border_color": "dark",
+        "sub_footer_border_width": "full",
+        "sub_footer_layout": "single",
+        "sub_footer_alignment": "align-center",
+        "sub_footer_linklist": "",
+        "show_policies": true,
+        "show_powered_by": true,
+        "payment_enable": true,
+        "location_enable": true,
+        "location_format": "code",
+        "show_currency_symbol": true,
+        "language_enable": true,
+        "show_location_labels": false,
+        "follow_shop_enable": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

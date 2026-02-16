@@ -1,0 +1,185 @@
+{% assign group_by_region = settings.enable_region_grouping %}
+
+<div class="market-selector-list{% if localization.available_countries.size > 4 %} market-selector-list-rs{% endif %}">
+{% if localization.available_countries.size > 1 %}
+
+{% if localization.available_countries.size > 14 and group_by_region == false %}
+<div class="country-search-input-wrapper">
+<input class="country-search-input" type="text" id="countrySearch" onkeyup="filterCountryList()" placeholder="{{ 'general.search.search' | t }}">
+{% render 'icon-search' %}
+</div>
+{% endif %}
+  <localization-form>
+    {% form 'localization' %}
+
+{% if group_by_region %}
+
+{% assign namerica_list = 'us,ca,ai,ag,bb,bl,bz,hn,mx,cr,cu,ht,gl,gt,jm,kn,ky,mf,ni,pa,pm,pr,sv,tc,um,vg' | split: ',' %}
+{% assign samerica_list = 'ag,ar,aw,bm,br,bo,bq,cl,co,cw,dm,ec,fk,gd,gf,gp,gs,gy,lc,mq,ms,pe,py,sr,tt,uy,ve,vc' | split: ',' %}
+{% assign europe_list = 'gb,ad,al,at,ax,ba,be,bg,by,ch,cy,cz,de,dk,ee,es,fr,fi,fo,gg,gi,gr,hr,hu,ie,im,it,je,li,lt,lu,lv,me,mc,md,mk,mt,nl,no,pl,pt,se,sm,ro,rs,si,sk,sj,ua,xk' | split: ',' %}
+{% assign africa_list = 'ao,bj,bf,bi,bw,dz,cd,cf,cg,ci,cm,dj,eg,eh,er,et,gh,gq,gn,gw,ke,km,lr,ls,ma,mr,mu,mw,mz,na,ng,re,rw,sc,sd,sh,sl,sn,ss,st,sz,td,tg,tn,tz,ug,yt,za,zm,zw' | split: ',' %}
+{% assign asia_list = 'ae,af,am,az,bd,bh,bn,bt,cc,cn,cx,ge,jp,jo,hk,kh,kg,kp,kr,kw,kz,il,in,iq,ir,is,la,lb,lk,mm,mo,my,np,om,ph,pk,ps,qa,ru,sa,sg,th,tj,tl,tr,vn,uz,ye' | split: ',' %}
+{% assign oceania_list = 'au,nz,ck,fj,ki,nf,nr,nu,pg,pf,pn,sb,tf,tk,to,vu,wf,ws' | split: ',' %}
+    
+  <div class="market-selector-groups-list-container region-layout--{{ settings.region_layout }}">
+  <div class="market-selector-group-list" data-market-list="Namerica">
+  <span class="market-selector-group-heading">{{ 'general.regions.north_america' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if namerica_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span>{% if settings.show_country_currency %}<span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span>{% endif %}</span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+  <div class="market-selector-group-list" data-market-list="Samerica">
+  <span class="market-selector-group-heading">{{ 'general.regions.south_america' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if samerica_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span><span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span></span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+  <div class="market-selector-group-list" data-market-list="Europe">
+  <span class="market-selector-group-heading">{{ 'general.regions.europe' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if europe_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span><span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span></span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+
+  <div class="market-selector-group-list" data-market-list="Africa">
+  <span class="market-selector-group-heading">{{ 'general.regions.africa' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if africa_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span><span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span></span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+  <div class="market-selector-group-list" data-market-list="Asia">
+  <span class="market-selector-group-heading">{{ 'general.regions.asia' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if asia_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span><span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span></span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+  <div class="market-selector-group-list" data-market-list="Oceania">
+  <span class="market-selector-group-heading">{{ 'general.regions.oceania' | t }}</span>
+
+  <ul role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% assign iso_lower = country.iso_code | downcase %}
+        {% if oceania_list contains iso_lower %}
+        <li class="vert-list-item list-countries{% if country.iso_code == localization.country.iso_code %} market-list-current{% endif %}" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span><span class="list-countries-name">{{ country.name }}</span><span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span></span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+  </div>
+  </div>
+  
+{% else %}
+    
+  <ul id="CountryList-NA" role="list" class="vert-list ui-icon-list ui-nav-element">
+      {% for country in localization.available_countries %}
+        {% if country.iso_code == localization.country.iso_code %}
+        <li class="vert-list-item list-countries market-list-current" tabindex="-1">
+           {% assign coun = country.iso_code %}
+          <a href="#" aria-current="true" class="country-list-current" data-value="{{ country.iso_code }}">
+            {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span class="list-countries-name">{{ country.name }}</span>{% if settings.show_country_currency %}<span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span>{% endif %}
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+       
+      {% for country in localization.available_countries %}
+        {% unless country.iso_code == localization.country.iso_code %}
+            <li class="vert-list-item list-countries" tabindex="-1">
+               {% assign coun = country.iso_code %}
+              <a href="#" data-value="{{ country.iso_code }}">
+                {% if settings.enable_country_flags %}{% render 'internationalization-flag', flag: coun %}{% endif %}<span class="list-countries-name">{{ country.name }}</span>{% if settings.show_country_currency %}<span class="list-countries-currency">{{ country.currency.iso_code }} ({{ country.currency.symbol }})</span>{% endif %}
+              </a>
+            </li>
+        {% endunless %}
+      {% endfor %}
+  </ul>
+
+{% endif %}
+  
+  <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+    {% endform %}
+  </localization-form>
+{% endif %}
+</div>
+
+<script>
+function filterCountryList() {
+  var cinput = document.getElementById('countrySearch');
+  if (!cinput) return;
+
+  var filter = cinput.value.toUpperCase();
+  var ul = document.getElementById("CountryList-NA");
+  var li = ul.getElementsByTagName('li');
+
+  for (var i = 0; i < li.length; i++) {
+    var a = li[i].getElementsByTagName("a")[0];
+    if (a) {
+      var txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
