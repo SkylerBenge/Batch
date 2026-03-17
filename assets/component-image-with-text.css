@@ -13,6 +13,9 @@
   margin-bottom: 10px;
   min-height: 80px;
   line-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-with-text--content {
@@ -45,13 +48,13 @@
 .image-with-text--image video {
   width: 100%;
   height: auto;
-  border-radius: var(--media-radius);
+  border-radius: 20px;
 }
 
 .image-with-text--image img {
   width: 100%;
   height: auto;
-  border-radius: var(--media-radius);
+  border-radius: 20px;
 }
 
 .image-with-text--image .global-image-placeholder {
@@ -82,7 +85,8 @@
 
 .image-cover-container {
   position: relative;
-  height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .image-ratio-square .image-cover-container {
@@ -202,6 +206,53 @@
   width: 260px;
 }
 
+.iwt-extra-images {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.iwt-extra-images--1 {
+  grid-template-columns: 1fr;
+}
+
+.iwt-extra-images--2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.iwt-extra-images--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.iwt-extra-image {
+  overflow: hidden;
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.iwt-extra-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.page-width-full-grid .iwt-extra-image img {
+  border-radius: 0;
+}
+
+.page-width-full-grid .iwt-extra-image {
+  border-radius: 0;
+}
+
 .fp-tag {
   display: inline-block;
   font-size: 10px;
@@ -256,7 +307,12 @@
   
   .inset-image-large {
     width: 360px;
-  }  
+  }
+
+  .iwt-extra-images {
+    gap: 10px;
+    margin-top: 10px;
+  }
 }
 
 .image-cover img {
@@ -540,31 +596,31 @@
 }
 
 @media only screen and (min-width: 950px) {
-  .iwt-screen-height, .iwt-screen-height .image-cover-wrapper, .iwt-screen-height .image-with-text--text {
+  .iwt-screen-height, .iwt-screen-height .image-with-text--image, .iwt-screen-height .image-with-text--text {
     min-height: 100vh;
   }
   .iwt-screen-height .section-inner, .iwt-screen-height .image-with-text-content-container {
     height: 100%;
   }
-  body:has(.header-bar--full) .iwt-screen-height, body:has(.header-bar--full) .iwt-screen-height .image-cover-wrapper, body:has(.header-bar--full) .iwt-screen-height .image-with-text--text {
+  body:has(.header-bar--full) .iwt-screen-height, body:has(.header-bar--full) .iwt-screen-height .image-with-text--image, body:has(.header-bar--full) .iwt-screen-height .image-with-text--text {
     min-height: calc(100vh - var(--site-header-height-mobile));
   }
-  body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-cover-wrapper, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--text {
+  body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--image, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--text {
     min-height: calc(100vh - var(--site-header-height-mobile) - 35px);
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .iwt-screen-height, .iwt-screen-height .image-cover-wrapper, .iwt-screen-height .image-with-text--text {
+  .iwt-screen-height, .iwt-screen-height .image-with-text--image, .iwt-screen-height .image-with-text--text {
     min-height: 100vh;
   }
   .iwt-screen-height .section-inner, .iwt-screen-height .image-with-text-content-container {
     height: 100%;
   }
-  body:has(.header-bar--full) .iwt-screen-height, body:has(.header-bar--full) .iwt-screen-height .image-cover-wrapper, body:has(.header-bar--full) .iwt-screen-height .image-with-text--text {
+  body:has(.header-bar--full) .iwt-screen-height, body:has(.header-bar--full) .iwt-screen-height .image-with-text--image, body:has(.header-bar--full) .iwt-screen-height .image-with-text--text {
     min-height: calc(100vh - var(--site-header-height-desktop));
   }
-  body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-cover-wrapper, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--text {
+  body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--image, body:has(.full-width-announcement-bar):has(.header-bar--full) .iwt-screen-height .image-with-text--text {
     min-height: calc(100vh - var(--site-header-height-desktop) - 35px);
   }
 }
@@ -572,7 +628,7 @@
 /* Adjustments for iPad Pro and iPad Air in portrait orientation */
 
 @media only screen and (min-width: 750px) and (max-width: 1200px) and (min-height: 1100px) {
-  .iwt-screen-height, .iwt-screen-height .image-cover-wrapper, .iwt-screen-height .image-with-text--text {
+  .iwt-screen-height, .iwt-screen-height .image-with-text--image, .iwt-screen-height .image-with-text--text {
     min-height: 750px !important;
   }  
 }

@@ -187,7 +187,7 @@
         "type": "color",
         "id": "announcement_bg_col",
         "default": "#eeeeee",
-        "label": "t:settings_schema.colors.settings.colors_announcement_background.label",
+        "label": "t:settings_schema.colors.settings.colors_announcement_background.label"
       },
       {
         "type": "color",
@@ -966,7 +966,7 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
         "default": 0
-      }      
+      }
     ]
   },
   {
@@ -1383,7 +1383,7 @@
           {
             "value": "minimal",
             "label": "t:settings_schema.cards.settings.quick_add_card_style_mobile.options__2.label"
-          }          
+          }
         ],
         "default": "normal",
         "label": "t:settings_schema.cards.settings.quick_add_card_style_mobile.label",
@@ -1395,7 +1395,7 @@
         "label": "t:settings_schema.cards.settings.quick_add_desktop_rollover.label",
         "info": "t:settings_schema.cards.settings.quick_add_desktop_rollover.info",
         "default": true
-      },      
+      },
       {
         "type": "header",
         "content": "t:settings_schema.badges.name"
@@ -1555,7 +1555,7 @@
         "type": "color",
         "id": "collection_card_bg_color",
         "label": "t:settings_schema.collection_cards.settings.card_background_color.label"
-      }      
+      }
     ]
   },
   {
@@ -1640,7 +1640,7 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
         "default": 0
-      },
+      }
     ]
   },
   {
@@ -1746,7 +1746,7 @@
         ],
         "default": "uppercase",
         "label": "t:settings_schema.global.settings.font_case.label"
-      },      
+      },
       {
         "type": "header",
         "content": "t:settings_schema.badges.settings.blog_tags.label"
@@ -2438,7 +2438,7 @@
         ],
         "default": "vertical",
         "label": "t:settings_schema.currency_format.settings.region_layout.label"
-      },  
+      },
       {
         "type": "checkbox",
         "id": "enable_country_flags",

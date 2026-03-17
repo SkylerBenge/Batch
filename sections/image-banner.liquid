@@ -10,7 +10,7 @@
 {% assign heading_html_tag = 'h2' %}
 
 {% if section.index == 1 %}
-{% assign heading_html_tag = 'h1' %}  
+{% assign heading_html_tag = 'h1' %}
 {% endif %}
 
 {%- style -%}
@@ -56,7 +56,7 @@
 }
 
 .section-{{ section.id }} .banner-secondary-image img {
-  filter: blur({{ section.settings.secondary_image_blur }}px); 
+  filter: blur({{ section.settings.secondary_image_blur }}px);
 }
 
 .section-{{ section.id }} .banner-full-bleed-text > div {
@@ -69,7 +69,8 @@
   }
   .section-{{ section.id }} .banner-secondary-image {
     padding: {{ section.settings.secondary_image_padding }}px;
-  }  
+    display: none;
+  }
 }
 
 {%- endstyle -%}
@@ -91,7 +92,7 @@
 {% if block.settings.logo_full_width %}
 {% assign logo_width = 2400 %}
 {% endif %}
-  
+
 <style>
   .banner-logo {
     width: {{ block.settings.logo_width_mobile }}px;
@@ -101,7 +102,7 @@
     .banner-logo {
       width: {{ block.settings.logo_width_desktop }}px;
       max-width: 100%;
-    }    
+    }
   }
   {% if block.settings.logo_full_width %}
   .banner-logo {
@@ -109,16 +110,16 @@
   }
   {% endif %}
 </style>
-  
+
 <div class="banner-logo" {{ block.shopify_attributes }}>
 {% if block.settings.logo %}{{ block.settings.logo | image_url: width: logo_width | image_tag }}{% endif %}
 </div>
-  
+
 {% when 'caption' %}
 <div class="section-label" {{ block.shopify_attributes }}>
 {{ block.settings.caption }}
 </div>
-  
+
 {% when 'heading' %}
 <div class="image-banner-heading align-{{ block.settings.txt_alignment }}" {{ block.shopify_attributes }}>
 {% unless block.settings.txt_alignment == 'asymmetric' and block.settings.heading contains '/' %}
@@ -133,19 +134,51 @@
   {% endfor %}
 </{{ heading_html_tag }}>
 {% endif %}
-  
+
 </div>
-  
+
 {% when 'text' %}
-<div class="{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+<style>
+  .text-block-{{ block.id }} {
+    position: absolute;
+    top: {{ block.settings.text_position_mobile_top }}%;
+    left: {{ block.settings.text_position_mobile_left }}%;
+    width: {{ block.settings.text_width_mobile }}%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (min-width: 900px) {
+    .text-block-{{ block.id }} {
+      top: {{ block.settings.text_position_desktop_top }}%;
+      left: {{ block.settings.text_position_desktop_left }}%;
+      width: {{ block.settings.text_width_desktop }}%;
+    }
+  }
+</style>
+<div class="text-block-{{ block.id }} {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
 {{ block.settings.text }}
-</div>  
+</div>
 
 {% when 'buttons' %}
 <style>
   .section-{{ section.id }} .image-banner-buttons-inline {
     padding-top: {{ block.settings.padding_top }}px !important;
     padding-bottom: {{ block.settings.padding_bottom }}px !important;
+  }
+  .button-block-{{ block.id }} {
+    position: absolute;
+    top: {{ block.settings.button_position_mobile_top }}%;
+    left: {{ block.settings.button_position_mobile_left }}%;
+    width: {{ block.settings.button_width_mobile }}% !important;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (min-width: 900px) {
+    .button-block-{{ block.id }} {
+      top: {{ block.settings.button_position_desktop_top }}%;
+      left: {{ block.settings.button_position_desktop_left }}%;
+      width: {{ block.settings.button_width_desktop }}% !important;
+    }
   }
 </style>
 {% assign button_one_link = block.settings.btn_one_link %}
@@ -159,12 +192,12 @@
 {% assign color_scheme = block.settings.btn_color_scheme %}
 {% assign button_layout = block.settings.btn_layout %}
   
-<div class="image-banner-buttons-inline{% if block.settings.btn_one_show and block.settings.btn_two_show %} buttons-layout-{{ button_layout }}{% endif %} button-color-scheme--{{ color_scheme }}" {{ block.shopify_attributes }}> 
+<div class="button-block-{{ block.id }} image-banner-buttons-inline{% if block.settings.btn_one_show and block.settings.btn_two_show %} buttons-layout-{{ button_layout }}{% endif %} button-color-scheme--{{ color_scheme }}" {{ block.shopify_attributes }}>
 {% if block.settings.btn_one_show %}
-<a href="{{ button_one_link }}" class="{% unless block.settings.btn_one_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_one_style }}">{{ block.settings.btn_one_txt }}</a>  
+<a href="{{ button_one_link }}" class="{% unless block.settings.btn_one_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_one_style }}">{{ block.settings.btn_one_txt }}</a>
 {% endif %}
 {% if block.settings.btn_two_show %}
-<a href="{{ button_two_link }}" class="{% unless block.settings.btn_two_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_two_style }}">{{ block.settings.btn_two_txt }}</a> 
+<a href="{{ button_two_link }}" class="{% unless block.settings.btn_two_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_two_style }}">{{ block.settings.btn_two_txt }}</a>
 {% endif %}
 </div>
 {% endcase %}
@@ -172,7 +205,7 @@
 
 </div>
 
-{% assign primary_image_class = 'std' %}  
+{% assign primary_image_class = 'std' %}
 {% assign secondary_image_class = 'std' %}
 
 {% if section.settings.primary_image_mobile_show == false %}
@@ -182,7 +215,7 @@
 {% if section.settings.secondary_image_mobile_show == false %}
 {% assign secondary_image_class = 'image-mob-hide' %}
 {% endif %}
-  
+
 <div class="bg-pane banner-overlay"></div>
 {% if section.settings.scroll_fade_effect %}<div class="bg-pane banner-overlay-fader"></div>{% endif %}
 <div class="bg-pane banner-bg-image">
@@ -203,7 +236,7 @@
 {{ section.settings.image_secondary | image_url: width: 2800 | image_tag: class: secondary_image_class, fetchpriority: fetch_priority, loading: image_loading }}
 {% else %}
 {{ section.settings.image_secondary | image_url: width: 1800 | image_tag: class: secondary_image_class, fetchpriority: fetch_priority, loading: image_loading }}
-{% endif %}  
+{% endif %}
 </div>
 {% endif %}
 
@@ -234,7 +267,7 @@
       const maxScroll = window.innerHeight;
 
       const opacity = Math.min(scrollPosition / maxScroll, 1);
-      
+
       // Set the background color with the calculated opacity
       //bgPane.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
 
@@ -249,12 +282,12 @@
   });
 </script>
 {% endif %}
-  
+
 {% schema %}
   {
     "name": "t:sections.image-banner.name",
   	"tag": "section",
-  	"class": "section",    
+  	"class": "section",
     "disabled_on": {
       "groups": ["header", "footer"],
       "templates": ["cart"]
@@ -386,9 +419,77 @@
             {
               "value": "text-xl",
               "label": "t:sections.all.size.xl"
+            },
+            {
+              "value": "text-xxl",
+              "label": "XXL"
+            },
+            {
+              "value": "text-xxxl",
+              "label": "XXXL"
             }
           ],
           "default": "text-std"
+        },
+        {
+          "type": "range",
+          "id": "text_position_mobile_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Text Position Mobile - Top"
+        },
+        {
+          "type": "range",
+          "id": "text_position_mobile_left",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Text Position Mobile - Left"
+        },
+        {
+          "type": "range",
+          "id": "text_position_desktop_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Text Position Desktop - Top"
+        },
+        {
+          "type": "range",
+          "id": "text_position_desktop_left",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Text Position Desktop - Left"
+        },
+        {
+          "type": "range",
+          "id": "text_width_mobile",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 80,
+          "label": "Text Width Mobile"
+        },
+        {
+          "type": "range",
+          "id": "text_width_desktop",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Text Width Desktop"
         }
       ]
     },
@@ -538,7 +639,67 @@
           "unit": "px",
           "default": 20,
           "label": "t:sections.all.padding.padding_bottom"
-        }        
+        },
+        {
+          "type": "range",
+          "id": "button_position_mobile_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Button Position Mobile - Top"
+        },
+        {
+          "type": "range",
+          "id": "button_position_mobile_left",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Button Position Mobile - Left"
+        },
+        {
+          "type": "range",
+          "id": "button_position_desktop_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Button Position Desktop - Top"
+        },
+        {
+          "type": "range",
+          "id": "button_position_desktop_left",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Button Position Desktop - Left"
+        },
+        {
+          "type": "range",
+          "id": "button_width_mobile",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 80,
+          "label": "Button Width Mobile"
+        },
+        {
+          "type": "range",
+          "id": "button_width_desktop",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50,
+          "label": "Button Width Desktop"
+        }
       ]
     }
   ],
@@ -572,7 +733,7 @@
       "id": "banner_full_link",
       "label": "t:sections.image-banner.settings.banner_link.label",
       "info": "t:sections.image-banner.settings.banner_link.info"
-    },      
+    },
     {
       "type": "header",
       "content": "t:sections.all.primary_image"

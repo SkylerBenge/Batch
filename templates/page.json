@@ -44,26 +44,91 @@
           "settings": {
             "text": "<p>At <strong>Batch</strong>, we believe food should nourish more than just your hunger, it should nourish your life. Rice has always been a part of family tables, cultures, and comfort across the world. But for all its warmth and familiarity, it’s often lacking in real nutrition.</p><p>We set out to change that.</p><p>By combining organic long grain white rice with rich, organic chicken broth and grass-fed collagen, we’ve created something that feels familiar, but delivers so much more. Every pouch is made with care in the USA using ethically sourced ingredients and no shortcuts, ever.</p><p>Our mission is simple: to bring purpose, substance, and intention to a food we all know and love.</p>",
             "text_size": "text-std",
-            "alignment": "left",
+            "alignment": "center",
             "text_indent": "noindent"
           }
         }
       },
-      "block_order": [
-        "caption_6Q6WeC",
-        "heading_fc4YmU",
-        "text_tVNeTB"
-      ],
+      "block_order": ["caption_6Q6WeC", "heading_fc4YmU", "text_tVNeTB"],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "content_width": "page-width",
-        "bg_image": "shopify://shop_images/rice-paddies-surround-yellow-house.jpg",
-        "bg_image_darken": 70,
+        "bg_image_darken": 0,
         "bg_image_blur": 0,
-        "text_color": "fg-01",
+        "text_color": "fg-body",
+        "bg_color": "bg-03",
+        "padding_top": 20,
+        "padding_bottom": 40,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "image_with_text_ttkRYW": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_QVFenq": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Mission"
+          }
+        },
+        "heading_cF6bHU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Setting the New Standard",
+            "heading_size": "h1"
+          }
+        },
+        "text_HjEriW": {
+          "type": "text",
+          "settings": {
+            "description": "<p>At <strong>Batch</strong>, we believe food should nourish more than just your hunger, it should nourish your life. Rice has always been a part of family tables, cultures, and comfort across the world. But for all its warmth and familiarity, it’s often lacking in real nutrition.</p><p>We set out to change that.</p><p>By combining organic long grain white rice with rich, organic chicken broth and grass-fed collagen, we’ve created something that feels familiar, but delivers so much more. Every pouch is made with care in the USA using ethically sourced ingredients and no shortcuts, ever.</p><p>Our mission is simple: to bring purpose, substance, and intention to a food we all know and love.</p>"
+          }
+        },
+        "button_Qx9PxU": {
+          "type": "button",
+          "settings": {
+            "btn_color_scheme": "match-section",
+            "button_width_mobile": "default",
+            "btn_txt": "Shop Now",
+            "btn_link": "shopify://collections/frontpage",
+            "btn_style": "solid",
+            "btn_two_enable": false,
+            "button_layout": "stacked",
+            "btn_two_txt": "Button label",
+            "btn_two_link": "",
+            "btn_two_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "caption_QVFenq",
+        "heading_cF6bHU",
+        "text_HjEriW",
+        "button_Qx9PxU"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_size": "flexible",
+        "content_width": "page-width",
+        "image_alignment": "left",
+        "dt_image_width": 40,
+        "card_spacing": 20,
+        "image": "shopify://shop_images/Unknown.png",
+        "image_ratio": "square",
+        "secondary_image": "shopify://shop_images/a-pile-of-white-rice-on-a-transparent-background-png.png",
+        "tertiary_image": "shopify://shop_images/white-rice-thai-cuisine-cereal-basmati-rice-png-photos.jpg",
+        "quaternary_image": "shopify://shop_images/chicken-broth.png",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "text_color": "fg-body",
         "bg_color": "bg-body",
-        "padding_top": 80,
-        "padding_bottom": 80,
+        "top_padding": 80,
+        "bottom_padding": 80,
         "top_border": false,
         "bottom_border": false,
         "border_width": "normal",
@@ -101,11 +166,7 @@
           }
         }
       },
-      "block_order": [
-        "content_LJTnMF",
-        "content_8dLe6c",
-        "content_cpzmeM"
-      ],
+      "block_order": ["content_LJTnMF", "content_8dLe6c", "content_cpzmeM"],
       "name": "t:sections.tabbed-content.presets.name",
       "settings": {
         "section_label": "",
@@ -127,8 +188,8 @@
         "btn_style": "solid",
         "text_color": "fg-body",
         "bg_color": "bg-body",
-        "top_padding": 80,
-        "bottom_padding": 80,
+        "top_padding": 0,
+        "bottom_padding": 40,
         "top_border": false,
         "bottom_border": false,
         "border_width": "normal",
@@ -220,6 +281,7 @@
   "order": [
     "main",
     "rich_text_C7ipE4",
+    "image_with_text_ttkRYW",
     "section_tabs_pPEghQ",
     "section_feature_icons_BCjWTm"
   ]

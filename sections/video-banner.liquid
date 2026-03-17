@@ -4,7 +4,7 @@
 {% assign heading_html_tag = 'h2' %}
 
 {% if section.index == 1 %}
-{% assign heading_html_tag = 'h1' %}  
+{% assign heading_html_tag = 'h1' %}
 {% endif %}
 
 {%- style -%}
@@ -21,12 +21,12 @@
   background: rgba(0,0,0,0.{{ section.settings.overlay_level }});
 }
 {%- endif -%}
-  
+
 .section-{{ section.id }} .section-inner {
   padding-top: {{ section.settings.top_padding }}px;
   padding-bottom: {{ section.settings.bottom_padding }}px;
 }
-  
+
 .section-{{ section.id }} .banner-overlay {
   margin-top: -{{ section.settings.top_padding }}px;
   margin-bottom: -{{ section.settings.bottom_padding }}px;
@@ -55,7 +55,7 @@
     padding: {{ section.settings.video_margin_desktop }}px;
   }
 }
-  
+
 {%- endstyle -%}
 
 <div class="section-container{% if section.index == 1 %} landing-screen-section{% endif %} section-video-banner banner-full-bleed section-{{ section.id }} {{ section.settings.banner_size }} color-scheme-{{ section.settings.text_color }}">
@@ -82,7 +82,7 @@
     .banner-logo {
       width: {{ block.settings.logo_width_desktop }}px;
       max-width: 100%;
-    }    
+    }
   }
   {% if block.settings.logo_full_width %}
   .banner-logo {
@@ -90,16 +90,16 @@
   }
   {% endif %}
 </style>
-  
+
 <div class="banner-logo" {{ block.shopify_attributes }}>
 {% if block.settings.logo %}{{ block.settings.logo | image_url: width: logo_width | image_tag }}{% endif %}
 </div>
-  
+
 {% when 'caption' %}
 <div class="section-label" {{ block.shopify_attributes }}>
 {{ block.settings.caption }}
 </div>
-  
+
 {% when 'heading' %}
 <div class="video-banner-heading align-{{ block.settings.txt_alignment }}" {{ block.shopify_attributes }}>
 {% unless block.settings.txt_alignment == 'asymmetric' and block.settings.heading contains '/' %}
@@ -114,11 +114,11 @@
 </{{ heading_html_tag }}>
 {% endif %}
 </div>
-  
+
 {% when 'text' %}
 <div class="{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
 {{ block.settings.text }}
-</div>  
+</div>
 
 {% when 'buttons' %}
 
@@ -128,16 +128,16 @@
     padding-bottom: {{ block.settings.padding_bottom }}px !important;
   }
 </style>
-  
+
 {% assign color_scheme = block.settings.btn_color_scheme %}
 {% assign button_layout = block.settings.btn_layout %}
-  
-<div class="image-banner-buttons-inline{% if block.settings.btn_one_show and block.settings.btn_two_show %} buttons-layout-{{ button_layout }}{% endif %}  button-color-scheme--{{ color_scheme }}" {{ block.shopify_attributes }}> 
+
+<div class="image-banner-buttons-inline{% if block.settings.btn_one_show and block.settings.btn_two_show %} buttons-layout-{{ button_layout }}{% endif %}  button-color-scheme--{{ color_scheme }}" {{ block.shopify_attributes }}>
 {% if block.settings.btn_one_show %}
-<a href="{{ block.settings.btn_one_link }}" class="{% unless block.settings.btn_one_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_one_style }}">{{ block.settings.btn_one_txt }}</a>  
+<a href="{{ block.settings.btn_one_link }}" class="{% unless block.settings.btn_one_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_one_style }}">{{ block.settings.btn_one_txt }}</a>
 {% endif %}
 {% if block.settings.btn_two_show %}
-<a href="{{ block.settings.btn_two_link }}" class="{% unless block.settings.btn_two_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_two_style }}">{{ block.settings.btn_two_txt }}</a> 
+<a href="{{ block.settings.btn_two_link }}" class="{% unless block.settings.btn_two_style == 'link--underlined' %}button{% endunless %} {{ block.settings.btn_two_style }}">{{ block.settings.btn_two_txt }}</a>
 {% endif %}
 </div>
 {% endcase %}
@@ -170,10 +170,10 @@
       loop: true,
       controls: false,
       muted: true
-  }} 
+  }}
 </div>
 {% endif %}
-  
+
 <div class="video-banner-player{% if section.settings.video_mob_url != null %} desktop-video-player{% endif %} autoplaying-video video-banner-video-size-{{ section.settings.video_size }} video-banner-video-position-{{ section.settings.video_position }}">
   {{
     section.settings.video_url
@@ -183,7 +183,7 @@
       loop: true,
       controls: false,
       muted: true
-  }}  
+  }}
 </div>
 
 {% if section.settings.video_mob_url == null and section.settings.video_url == null and section.settings.video_poster == blank %}
@@ -191,10 +191,10 @@
 {% render 'media-placeholder-lifestyle', style: 12 %}
 </div>
 {% endif %}
-  
+
 </div>
 
-  
+
 </div>
 </div>
 
@@ -238,7 +238,7 @@
 
       // Calculate opacity based on scroll position
       const opacity = Math.min(scrollPosition / maxScroll, 1);
-      
+
       // Set the background color with the calculated opacity
       //bgPane.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
 
@@ -253,12 +253,12 @@
   });
 </script>
 {% endif %}
-  
+
 {% schema %}
   {
     "name": "t:sections.video-banner.name",
   	"tag": "section",
-  	"class": "section",    
+  	"class": "section",
     "disabled_on": {
       "groups": ["header", "footer"],
       "templates": ["cart"]
@@ -333,8 +333,12 @@
           "label": "t:sections.all.heading_size.label",
           "options": [
             {
+              "value": "h2",
+              "label": "t:sections.all.size.small"
+            },
+            {
               "value": "h1",
-              "label": "t:sections.all.size.normal"
+              "label": "t:sections.all.size.medium"
             },
             {
               "value": "h0",
@@ -404,6 +408,14 @@
             {
               "value": "text-xl",
               "label": "t:sections.all.size.xl"
+            },
+            {
+              "value": "text-xxl",
+              "label": "XXL"
+            },
+            {
+              "value": "text-xxxl",
+              "label": "XXXL"
             }
           ],
           "default": "text-std"
@@ -549,7 +561,7 @@
             {
               "value": "link--underlined",
               "label": "t:sections.all.buttons.button_style_link"
-            }              
+            }
         ],
           "default": "button--solid"
         }

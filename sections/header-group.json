@@ -17,14 +17,21 @@
         "announcement_Lpn8Wc": {
           "type": "announcement",
           "settings": {
-            "text": "An announcement about our store",
+            "text": "Free Shipping on orders over $49.99",
             "link": ""
           }
         },
         "announcement_yhr8Ne": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on orders of $50 or more",
+            "text": "Made in the USA",
+            "link": ""
+          }
+        },
+        "announcement_riQ4qF": {
+          "type": "announcement",
+          "settings": {
+            "text": "28g Protein. Real Ingredients. Real Rice.",
             "link": ""
           }
         },
@@ -39,12 +46,14 @@
       "block_order": [
         "announcement_Lpn8Wc",
         "announcement_yhr8Ne",
-        "announcement_wyx8GY"
+        "announcement_riQ4qF"
       ],
       "settings": {
         "bar_type": "full-width",
         "border_opacity": 0,
         "corner_radius": 0,
+        "font_family": "body",
+        "font_style": "normal",
         "font_size_mobile": 12,
         "font_size_desktop": 14,
         "anim_style": "fade",
@@ -75,9 +84,7 @@
           }
         }
       },
-      "block_order": [
-        "image_9WdUz4"
-      ],
+      "block_order": ["image_9WdUz4"],
       "settings": {
         "logo_mobile_position": "center",
         "logo_dt_position": "center",
@@ -89,18 +96,20 @@
         "header_bar_width": "full",
         "header_hoz_width": "wide",
         "header_scroll_behaviour": "sticky",
-        "desktop_nav_position": "fly-out",
+        "desktop_nav_position": "inline",
         "menu_dropdown_function": "hover",
         "nav_bar_height_mobile": 60,
         "nav_bar_height": 80,
         "header_corner_radius": 0,
-        "header_border_opacity": 15,
+        "header_border_opacity": 0,
         "header_border_width": "full",
         "header_internal_border_width": "full",
         "header_shadow_opacity": 0,
         "trans_hp": true,
+        "trans_bg_opacity": 50,
         "trans_border_hide": true,
         "trans_header_color": "white",
+        "backdrop_blur": false,
         "menu_icon_style": "two_line",
         "drawer_list_system": "sliding",
         "drawer_text_alignment": "left",
@@ -161,7 +170,6 @@
     },
     "component_popup_rMH6Nb": {
       "type": "component-popup",
-      "disabled": true,
       "name": "t:sections.popup.presets.name",
       "settings": {
         "image": "shopify://shop_images/sts3719.jpg",

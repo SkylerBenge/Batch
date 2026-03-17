@@ -11,16 +11,55 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "blocks": {
+        "text_agC6XV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>28g Protein. Real Ingredients. Real Rice.</p>",
+            "text_size": "text-xxl",
+            "text_position_mobile_top": 80,
+            "text_position_mobile_left": 50,
+            "text_position_desktop_top": 50,
+            "text_position_desktop_left": 90,
+            "text_width_mobile": 80,
+            "text_width_desktop": 100
+          }
+        },
+        "buttons_Q6HpBQ": {
+          "type": "buttons",
+          "settings": {
+            "btn_one_show": true,
+            "btn_one_txt": "Shop Now",
+            "btn_one_link": "shopify://collections/frontpage",
+            "btn_one_style": "button--solid",
+            "btn_two_show": false,
+            "btn_two_txt": "Button label",
+            "btn_two_link": "",
+            "btn_two_style": "button--solid",
+            "btn_layout": "inline",
+            "btn_color_scheme": "default",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "button_position_mobile_top": 65,
+            "button_position_mobile_left": 50,
+            "button_position_desktop_top": 65,
+            "button_position_desktop_left": 90,
+            "button_width_mobile": 100,
+            "button_width_desktop": 100
+          }
+        }
+      },
+      "block_order": ["text_agC6XV", "buttons_Q6HpBQ"],
       "settings": {
         "banner_size": "banner-style-large",
         "banner_full_link": "",
-        "image": "shopify://shop_images/banner-text-fix.png",
+        "image": "shopify://shop_images/banner-new-Picsart-BackgroundRemover.png",
         "primary_image_size": "dt-full-bleed",
         "image_padding": 0,
         "main_image_animation": "none",
         "image_blur": 0,
         "primary_image_mobile_show": false,
-        "image_secondary": "shopify://shop_images/28g_Protein._real_ingredients._real_rice._b85c6dea-8c6b-4844-a104-4292e24ab8b3.png",
+        "image_secondary": "shopify://shop_images/28g_Protein._real_ingredients._real_rice._930a3ce3-404a-42fb-8813-e7923b5a5f15.png",
         "secondary_image_size": "dt-full-bleed",
         "secondary_image_padding": 0,
         "secondary_image_animation": "none",
@@ -36,8 +75,60 @@
         "scroll_fade_effect": false,
         "text_blend_effect": "none",
         "text_color": "fg-white",
-        "bg_color": "rgba(0,0,0,0)",
+        "bg_color": "#d4c8be",
         "overlay_level": 0
+      }
+    },
+    "video_banner_7znrKj": {
+      "type": "video-banner",
+      "blocks": {
+        "text_dFTxEq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>28g Protein. Real Ingredients. Real Rice.</p>",
+            "text_size": "text-xxl"
+          }
+        },
+        "buttons_g9eLFM": {
+          "type": "buttons",
+          "settings": {
+            "btn_layout": "inline",
+            "btn_color_scheme": "default",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "btn_one_show": true,
+            "btn_one_txt": "Button text",
+            "btn_one_link": "",
+            "btn_one_style": "button--solid",
+            "btn_two_show": false,
+            "btn_two_txt": "Button text",
+            "btn_two_link": "",
+            "btn_two_style": "button--solid"
+          }
+        }
+      },
+      "block_order": ["text_dFTxEq", "buttons_g9eLFM"],
+      "name": "t:sections.video-banner.presets.name",
+      "settings": {
+        "video_url": "shopify://files/videos/1841002-uhd_4096_2160_24fps.mp4",
+        "overlay_level": 0,
+        "banner_size": "banner-style-large",
+        "video_size": "100",
+        "video_position": "center",
+        "video_margin_mobile": 0,
+        "video_margin_desktop": 0,
+        "enable_playback_pause": false,
+        "txt_position": "middle_left",
+        "txt_alignment": "center",
+        "content_width": 50,
+        "text_vertical_spacing": 10,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "fade_in_text": true,
+        "scroll_fade_effect": false,
+        "text_blend_effect": "none",
+        "text_color": "fg-white",
+        "bg_color": "#000000"
       }
     },
     "featured_product_bx4a9K": {
@@ -68,11 +159,8 @@
           }
         }
       },
-      "block_order": [
-        "title_jkDpxV",
-        "price_hrWC77",
-        "button_XJ73GE"
-      ],
+      "block_order": ["title_jkDpxV", "price_hrWC77", "button_XJ73GE"],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "original-4-pack",
@@ -187,11 +275,8 @@
           }
         }
       },
-      "block_order": [
-        "slide_cfxLNk",
-        "slide_7zBK73",
-        "slide_rKPj9n"
-      ],
+      "block_order": ["slide_cfxLNk", "slide_7zBK73", "slide_rKPj9n"],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "banner_size": "banner-style-fullscreen",
@@ -257,11 +342,7 @@
           }
         }
       },
-      "block_order": [
-        "image_hRHfBa",
-        "image_3Xbk48",
-        "image_8jpmHn"
-      ],
+      "block_order": ["image_hRHfBa", "image_3Xbk48", "image_8jpmHn"],
       "name": "t:sections.feature_icons.presets.name",
       "settings": {
         "section_label": "",
@@ -293,8 +374,8 @@
         "text_color": "fg-body",
         "bg_color": "bg-body",
         "btn_color_scheme": "default",
-        "top_padding": 80,
-        "bottom_padding": 80,
+        "top_padding": 90,
+        "bottom_padding": 40,
         "top_border": false,
         "bottom_border": false,
         "border_width": "normal",
@@ -329,11 +410,8 @@
           }
         }
       },
-      "block_order": [
-        "title_DJrzaU",
-        "price_cRppmG",
-        "button_Km9mYL"
-      ],
+      "block_order": ["title_DJrzaU", "price_cRppmG", "button_Km9mYL"],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "unseasoned-4-pack",
@@ -386,11 +464,8 @@
           }
         }
       },
-      "block_order": [
-        "title_xF9QaY",
-        "price_tXQFPn",
-        "button_RzT6hz"
-      ],
+      "block_order": ["title_xF9QaY", "price_tXQFPn", "button_RzT6hz"],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "mix-match",
@@ -443,11 +518,8 @@
           }
         }
       },
-      "block_order": [
-        "title_XKTAAK",
-        "price_K7gMFd",
-        "button_D6WWGJ"
-      ],
+      "block_order": ["title_XKTAAK", "price_K7gMFd", "button_D6WWGJ"],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "batch-trucker-camo",
@@ -471,16 +543,256 @@
         "top_padding": 80,
         "bottom_padding": 80
       }
+    },
+    "featured_product_list_WfWP9e": {
+      "type": "featured-product-list",
+      "blocks": {
+        "product_EhNXxD": {
+          "type": "product",
+          "settings": {
+            "product": "mix-match"
+          }
+        },
+        "product_Khjwmb": {
+          "type": "product",
+          "settings": {
+            "product": "original-4-pack"
+          }
+        },
+        "product_tAX9qh": {
+          "type": "product",
+          "settings": {
+            "product": "unseasoned-4-pack"
+          }
+        },
+        "product_fKQHeN": {
+          "type": "product",
+          "settings": {
+            "product": "batch-trucker-cream-brown-brown"
+          }
+        },
+        "product_4rFj7W": {
+          "type": "product",
+          "settings": {
+            "product": "chocolate-collagen-peptides"
+          }
+        },
+        "product_6Le4zM": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_EhNXxD",
+        "product_Khjwmb",
+        "product_tAX9qh",
+        "product_fKQHeN",
+        "product_4rFj7W",
+        "product_6Le4zM"
+      ],
+      "name": "Featured product list",
+      "settings": {
+        "content_alignment": "center",
+        "section_label": "",
+        "heading": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "btn_enable": true,
+        "btn_label": "View All",
+        "btn_link": "shopify://collections/frontpage",
+        "btn_style": "solid",
+        "products_layout": "carousel",
+        "arrow_style": "solid",
+        "content_width": "page-width",
+        "mobile_grid": "1",
+        "tablet_grid": "3",
+        "dt_grid": "4",
+        "card_image_display": "second_image_hover",
+        "pagination_color_scheme": "body",
+        "show_prices": true,
+        "show_vendor": false,
+        "show_swatches": false,
+        "show_rating": true,
+        "rollover_titles": false,
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "btn_color_scheme": "default",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "top_border": true,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "section_testimonials_t33LyX": {
+      "type": "section-testimonials",
+      "blocks": {
+        "testimonial_kJ7Arh": {
+          "type": "testimonial",
+          "settings": {
+            "video": "shopify://files/videos/14150482-uhd_2160_3840_25fps.mp4",
+            "quote": "A customer review or quote from the press.",
+            "caption": "",
+            "star_rating": 5
+          }
+        },
+        "testimonial_n9tCiW": {
+          "type": "testimonial",
+          "settings": {
+            "video": "shopify://files/videos/14150482-uhd_2160_3840_25fps.mp4",
+            "quote": "A customer review or quote from the press.",
+            "caption": "",
+            "star_rating": 5
+          }
+        },
+        "testimonial_AWtMbN": {
+          "type": "testimonial",
+          "settings": {
+            "video": "shopify://files/videos/14150482-uhd_2160_3840_25fps.mp4",
+            "quote": "A customer review or quote from the press.",
+            "caption": "",
+            "star_rating": 5
+          }
+        },
+        "testimonial_BCBGLt": {
+          "type": "testimonial",
+          "settings": {
+            "video": "shopify://files/videos/14150482-uhd_2160_3840_25fps.mp4",
+            "quote": "A customer review or quote from the press.",
+            "image": "shopify://shop_images/banner-new.png",
+            "caption": "",
+            "star_rating": 5
+          }
+        },
+        "testimonial_GGR8Ki": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "A customer review or quote from the press.",
+            "caption": "",
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_kJ7Arh",
+        "testimonial_n9tCiW",
+        "testimonial_AWtMbN",
+        "testimonial_BCBGLt",
+        "testimonial_GGR8Ki"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "section_label": "",
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h2",
+        "content_alignment": "center",
+        "arrow_style": "solid-inverted",
+        "show_ratings": true,
+        "show_captions": true,
+        "show_logos": false,
+        "image_size": 80,
+        "quote_font_size": "normal",
+        "btn_enable": false,
+        "btn_txt": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "btn_color_scheme": "default",
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "top_padding": 40,
+        "bottom_padding": 40,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
+    },
+    "image_with_text_66H4zX": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_gBkaHP": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline"
+          }
+        },
+        "heading_AXjkE3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_QLkkNr": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or brand story.</p>"
+          }
+        },
+        "button_AkJPyK": {
+          "type": "button",
+          "settings": {
+            "btn_color_scheme": "default",
+            "button_width_mobile": "default",
+            "btn_txt": "Button label",
+            "btn_link": "",
+            "btn_style": "outline",
+            "btn_two_enable": false,
+            "button_layout": "stacked",
+            "btn_two_txt": "Button label",
+            "btn_two_link": "",
+            "btn_two_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "caption_gBkaHP",
+        "heading_AXjkE3",
+        "text_QLkkNr",
+        "button_AkJPyK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_size": "flexible",
+        "content_width": "page-width",
+        "image_alignment": "right",
+        "dt_image_width": 40,
+        "card_spacing": 20,
+        "image": "shopify://shop_images/28g_Protein._real_ingredients._real_rice._b85c6dea-8c6b-4844-a104-4292e24ab8b3.png",
+        "image_ratio": "square",
+        "secondary_image": "shopify://shop_images/white-rice-thai-cuisine-cereal-basmati-rice-png-photos.jpg",
+        "tertiary_image": "shopify://shop_images/a-pile-of-white-rice-on-a-transparent-background-png.png",
+        "quaternary_image": "shopify://shop_images/chicken-broth.png",
+        "txt_alignment": "left",
+        "txt_vertical_alignment": "middle",
+        "txt_vertical_padding": 0,
+        "text_color": "fg-body",
+        "bg_color": "bg-body",
+        "top_padding": 0,
+        "bottom_padding": 40,
+        "top_border": false,
+        "bottom_border": false,
+        "border_width": "normal",
+        "border_color": "dark"
+      }
     }
   },
   "order": [
     "image_banner",
+    "video_banner_7znrKj",
     "featured_product_bx4a9K",
     "section_text_ticker_zV3PBy",
     "slideshow_x9QxQg",
     "section_feature_icons_8ptPR4",
     "featured_product_ptGeJq",
     "featured_product_HzdfjB",
-    "featured_product_gqRyt3"
+    "featured_product_gqRyt3",
+    "featured_product_list_WfWP9e",
+    "section_testimonials_t33LyX",
+    "image_with_text_66H4zX"
   ]
 }
