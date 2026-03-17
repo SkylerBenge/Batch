@@ -309,7 +309,11 @@
     padding-top: 35px; 
   }
   .hdr-trans-hp .header-bar-inner {
+    {% if section.settings.trans_bg_opacity > 0 %}
+    background: rgba({{ settings.bar_bg_col.red }}, {{ settings.bar_bg_col.green }}, {{ settings.bar_bg_col.blue }}, {{ section.settings.trans_bg_opacity | divided_by: 100.0 }}) !important;
+    {% else %}
     background: none !important;
+    {% endif %}
     color: rgb(var(--site-header-transparent-color));
     border: 0;
     border-bottom: 1px solid rgba(var(--site-header-transparent-color),{{ section.settings.header_border_opacity | divided_by: 100.0 }});
@@ -1216,6 +1220,17 @@ if (searchclosebutton) {
       "label": "t:sections.header.settings.transparent_on_homepage.label",
       "info": "t:sections.header.settings.transparent_on_homepage.info",
       "default": true
+    },
+    {
+      "type": "range",
+      "id": "trans_bg_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0,
+      "label": "Transparent header background opacity",
+      "info": "When greater than 0, the header background color is shown at the selected opacity"
     },
     {
       "type": "checkbox",

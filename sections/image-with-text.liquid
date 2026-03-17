@@ -66,6 +66,16 @@
 {% assign card_space = 'grid-card-spacing-sixty' %}
 {% endif %}
 
+{% assign has_extra_images = false %}
+{% if section.settings.secondary_image or section.settings.tertiary_image or section.settings.quaternary_image %}
+{% assign has_extra_images = true %}
+{% endif %}
+
+{% assign extra_image_count = 0 %}
+{% if section.settings.secondary_image %}{% assign extra_image_count = extra_image_count | plus: 1 %}{% endif %}
+{% if section.settings.tertiary_image %}{% assign extra_image_count = extra_image_count | plus: 1 %}{% endif %}
+{% if section.settings.quaternary_image %}{% assign extra_image_count = extra_image_count | plus: 1 %}{% endif %}
+
 <div class="section-container section-image-with-text iwt-{{ section.settings.section_size }} iwt-dt-layout-{{ section.settings.dt_image_width }} section-{{ section.id }} color-scheme-{{ section.settings.text_color }} color-scheme-{{ section.settings.bg_color }}">
 
 {% if section.settings.top_border %}
@@ -87,22 +97,30 @@
 </div>
 </div>
 
+{% if has_extra_images %}
+<div class="iwt-extra-images iwt-extra-images--{{ extra_image_count }}">
+  {% if section.settings.secondary_image %}
+  <div class="iwt-extra-image">
+    {{ section.settings.secondary_image | image_url: width: 800 | image_tag: loading: 'lazy' }}
+  </div>
+  {% endif %}
+  {% if section.settings.tertiary_image %}
+  <div class="iwt-extra-image">
+    {{ section.settings.tertiary_image | image_url: width: 800 | image_tag: loading: 'lazy' }}
+  </div>
+  {% endif %}
+  {% if section.settings.quaternary_image %}
+  <div class="iwt-extra-image">
+    {{ section.settings.quaternary_image | image_url: width: 800 | image_tag: loading: 'lazy' }}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
 </div>
 
 <div class="image-with-text--text vertical-align--{{ section.settings.txt_vertical_alignment }}">
 <div class="image-with-text--content">
-{% if section.settings.secondary_image %}
-{% assign image_width = 400 %}
-{% if section.settings.secondary_image_scale == 'medium' %}
-{% assign image_width = 600 %}
-{% endif %}
-{% if section.settings.secondary_image_scale == 'large' %}
-{% assign image_width = 800 %}
-{% endif %}
-<div class="image-with-text--inset-image inset-image-{{ section.settings.secondary_image_scale }}">
-{{ section.settings.secondary_image | image_url: width: image_width | image_tag: loading: 'lazy' }}
-</div> 
-{% endif %}
 
 {% for block in section.blocks %}
   {% case block.type %}
@@ -242,7 +260,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.main_image.label"
-	},
+    },
     {
       "type": "select",
       "id": "image_ratio",
@@ -274,31 +292,17 @@
     {
       "type": "image_picker",
       "id": "secondary_image",
-      "label": "t:sections.image-with-text.settings.secondary_image.label"
-	},
+      "label": "Secondary image"
+    },
     {
-      "type": "select",
-      "id": "secondary_image_scale",
-      "label": "t:sections.image-with-text.settings.secondary_image_size.label",
-      "options": [
-        {
-          "value": "micro",
-          "label": "t:sections.all.size.micro"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.all.size.small"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.all.size.medium"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.all.size.large"
-        }
-		],
-      "default": "small"
+      "type": "image_picker",
+      "id": "tertiary_image",
+      "label": "Tertiary image"
+    },
+    {
+      "type": "image_picker",
+      "id": "quaternary_image",
+      "label": "Quaternary image"
     },
     {
       "type": "header",

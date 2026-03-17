@@ -113,7 +113,7 @@
 
 .mobile-video-player video::-webkit-media-controls-start-playback-button {
   display: none !important;
-  -webkit-appearance: none !important;  
+  -webkit-appearance: none !important;
 }
 
 .mobile-video-player video::-webkit-media-controls-overlay-play-button {

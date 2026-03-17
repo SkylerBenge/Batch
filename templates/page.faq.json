@@ -12,6 +12,19 @@
     "image_banner_XMktTE": {
       "type": "image-banner",
       "blocks": {
+        "text_8ARKBy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ANSWERING YOUR QUESTIONS</p>",
+            "text_size": "text-large",
+            "text_position_mobile_top": 100,
+            "text_position_mobile_left": 50,
+            "text_position_desktop_top": 75,
+            "text_position_desktop_left": 50,
+            "text_width_mobile": 80,
+            "text_width_desktop": 50
+          }
+        },
         "heading_K6x6px": {
           "type": "heading",
           "settings": {
@@ -19,22 +32,12 @@
             "heading_size": "h1",
             "txt_alignment": "center"
           }
-        },
-        "text_GDCa3d": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Answering your questions</p>",
-            "text_size": "text-std"
-          }
         }
       },
-      "block_order": [
-        "heading_K6x6px",
-        "text_GDCa3d"
-      ],
+      "block_order": ["text_8ARKBy", "heading_K6x6px"],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "banner_size": "banner-style-fullscreen",
+        "banner_size": "banner-style-slim",
         "banner_full_link": "",
         "image": "shopify://shop_images/sts3719.jpg",
         "primary_image_size": "dt-full-bleed",
@@ -134,8 +137,8 @@
         "accordion_title_size": "std",
         "text_color": "fg-body",
         "bg_color": "bg-body",
-        "padding_top": 80,
-        "padding_bottom": 80,
+        "padding_top": 40,
+        "padding_bottom": 0,
         "top_border": false,
         "bottom_border": false,
         "border_width": "normal",
@@ -160,10 +163,7 @@
           }
         }
       },
-      "block_order": [
-        "collapsible_row_ab4kze",
-        "collapsible_row_FhBN6X"
-      ],
+      "block_order": ["collapsible_row_ab4kze", "collapsible_row_FhBN6X"],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "section_label": "",
@@ -181,7 +181,7 @@
         "accordion_title_size": "std",
         "text_color": "fg-body",
         "bg_color": "bg-body",
-        "padding_top": 80,
+        "padding_top": 40,
         "padding_bottom": 80,
         "top_border": false,
         "bottom_border": false,
