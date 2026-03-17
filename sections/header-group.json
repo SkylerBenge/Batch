@@ -34,6 +34,13 @@
             "text": "28g Protein. Real Ingredients. Real Rice.",
             "link": ""
           }
+        },
+        "announcement_wyx8GY": {
+          "type": "announcement",
+          "settings": {
+            "text": "An announcement about our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
